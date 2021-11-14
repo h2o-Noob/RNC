@@ -180,4 +180,12 @@ footer
     #responsiveNav{
         display: block;
     }
+
+    .lft{
+        display: none;
+    }
+    
+    .rft{
+        display: none;
+    }
 } 
