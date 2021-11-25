@@ -24,7 +24,7 @@
     <nav id="desktopNav" class="nav">
       <div class="nav-left">
         <ul class="nav-list">
-          <li class="nav-itmes"><a href="#">Home</a></li>
+          <li class="nav-itmes"><a href="/index.html">Home</a></li>
           <li class="nav-itmes"><a href="/currency.html">Back on top</a></li>
           <li class="nav-itmes">
             <a href="https://confident-wiles-cac02f.netlify.app/#projects"
@@ -52,8 +52,8 @@
       <div class="collapse" id="navbarToggleExternalContent">
         <div class="p-4">
           <ul class="drop-nav-list">
-            <li class="nav-itmes"><a href="#">Home</a></li>
-            <li class="nav-itmes"><a href="#">Back on top</a></li>
+            <li class="nav-itmes"><a href="/index.html">Home</a></li>
+            <li class="nav-itmes"><a href="/currency.html">Back on top</a></li>
             <li class="nav-itmes">
               <a href="https://confident-wiles-cac02f.netlify.app/#projects"
                 >More items</a
@@ -66,27 +66,55 @@
     <div class="main">
       <div class="romCon">
         <h1 class="romH1">Currency Converter</h1>
-        <div class="br"></div>
         <div class="form">
           <form>
-            <input type="text" id="decimal" name="decimal" placeholder="Enter you ammount" />
-            <select
-              class="form-select"
-              style="width: 20%; margin-top: 1em;"
-              id="inlineFormSelectPref"
+            <label for="roman">Convert from</label>
+            <div
+              style="
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+              "
             >
-              <option selected>Currency</option>
-              <option value="1">INR</option>
-              <option value="2">USD</option>
-              <option value="3">PKR</option>
-            </select>
-            <div class="button_coantainer">
               <input
-                class="button"
-                type="button"
-                id="reverse"
-                value="Reverse"
+                type="text"
+                id="decimal"
+                name="decimal"
+                placeholder="Enter you ammount"
               />
+              <select
+                class="form-select mx-3"
+                style="width: 30%; margin-top: 1vh"
+                id="Currency_I"
+                onchange="SelectValue()"
+              >         
+              <option value="USD">USD</option>       
+              <option selected value="afg">afg</option>       
+              </select>
+            </div>
+            <label style="margin-top: 1vw" for="roman">To</label>
+            <div
+              style="
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+              "
+            >
+              <input
+                type="text"
+                id="decimal"
+                name="decimal"
+                placeholder="Result"
+              />
+              <select
+                class="form-select mx-3"
+                style="width: 30%; margin-top: 1vh"
+                id="Currency_O"
+                onchange="SelectValue()"
+              >
+              </select>
+            </div>
+            <div class="button_coantainer">
               <input
                 class="button"
                 type="button"
@@ -95,15 +123,13 @@
               />
               <input class="button" type="button" id="reset" value="Reset" />
             </div>
-            <label for="roman">Result</label>
-            <input type="text" id="roman" name="roman" />
           </form>
         </div>
       </div>
     </div>
     <footer>&copy noobCreates.org</footer>
 
-    <script src="script.js"></script>
+    <script src="currency.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
