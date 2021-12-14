@@ -10,7 +10,7 @@ body
 }
 
 
-/* .nav
+.nav
 {
     background-color: rgb(255, 107, 38);
     height: 15vh;
@@ -18,12 +18,12 @@ body
     align-items: center;
     position: sticky;
     top: 0px;
-    box-shadow: 0px 1px 25px 1px black;
+    box-shadow: 0px -3px 16px 6px #0000008a;;
 }
 
 .nav-left
 {
-
+    width: 70%;
 }
 
 
@@ -31,6 +31,7 @@ body
 {
     display: flex;
     list-style: none;
+    justify-content: end;
 }
 
 .nav-itmes
@@ -38,7 +39,8 @@ body
     margin: 10px 20px;
     padding: 10px;
     border-radius: 15px;
-} */
+    border: 1px solid rgb(255, 107, 38);
+}
 
 
 .leftSide
@@ -52,15 +54,24 @@ body
     margin: auto;
 }
 
+.nav li a
+{
+    padding: 10px;
+    border-radius: 15px;
+    transition: 0.5s;
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    padding: 10px;    
+}
+
 
  a:hover
 {
-    background-color: rgb(255, 94, 20);
     padding: 10px;
     border-radius: 15px;
-    border-bottom: 2px solid rgb(179, 57, 1);
-    border-right: 2px solid rgb(179, 57, 1);
-    box-shadow: 5px 5px 10px #08080869;
+    box-shadow: 3px 3px 6px #08080869;
+    background-color: rgb(255, 94, 20);
 }
 
 
@@ -69,20 +80,10 @@ a:active
     background-color: rgb(255, 94, 20);
     padding: 10px;
     border-radius: 15px;
-    border-top: 2px solid rgb(179, 57, 1);
-    border-left: 2px solid rgb(179, 57, 1);
-    border-bottom: 0px solid rgb(179, 57, 1);
-    border-right: 0px solid rgb(179, 57, 1);
-    box-shadow: 5px 5px 10px #08080869;
+    box-shadow: 1px 1px 3px #02020269;
+    transition: 0.1s;
 }
 
-.nav-itmes a
-{
-    text-decoration: none;
-    font-size: 30px;
-    color: white;
-    padding: 10px;
-}
 
 footer
 {
@@ -129,3 +130,54 @@ footer
         text-align: center;
         background-color: rgb(255, 107, 38);
 }
+
+#responsiveNav{
+    display: none;
+    background-color: rgb(255, 107, 38);
+}
+
+
+.drop-nav-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+
+.drop-nav-list li{
+
+}
+
+
+.drop-nav-list li a{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 15px;
+    transition: 0.5s;
+    font-size: 30px;
+    color: white;
+    padding: 10px;  
+}
+
+
+@media all and (max-width: 1024px){
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+
+    body{
+        height: 150vh;
+        font-family: 'Baloo 2', cursive;
+    }
+
+    #desktopNav{
+        display: none;
+    }
+    #responsiveNav{
+        display: block;
+    }
+} 
