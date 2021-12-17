@@ -18,6 +18,10 @@ app.get("/romCon", (req, res)=>{
 
 app.get("/currency", (req, res)=>{
   res.sendFile(__dirname + '/currency.html')
+}
+)
+app.get("/binary", (req, res)=>{
+  res.sendFile(__dirname + '/binary.html')
 })
 
 app.listen(port, ()=>{

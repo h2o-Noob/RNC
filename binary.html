@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="Css/style.css" />
-    <link rel="stylesheet" href="Css/home.css" />
+    <link rel="stylesheet" href="Css/romCon.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,7 +18,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <title>Noob Converts</title>
+    <title>Document</title>
   </head>
   <body>
     <nav id="desktopNav" class="nav">
@@ -79,49 +79,79 @@
         </div>
       </div>
     </nav>
-    <div class="intro">
-      <h1 class="intro_h1">Hi, this is Noob Converts</h1>
-      <h2 class="intro_h2">Here you can convert</h2>
-      <div class="services">
-        <div class="romCon">
-          <div class="left">
-            <img
-              src="https://t4.ftcdn.net/jpg/02/26/78/49/360_F_226784943_Fav90QSr4RlnAfWjuuR7S7joQ3AbPSpV.jpg"
-              alt=""
-            />
-          </div>
-          <div class="right">
-            <h1>
-              <span>Roman</span>
-              <span style="color: rgb(255, 94, 20)">Numerals</span>
-            </h1>
-          </div>
-        </div>
-        <br /><br />
-        <div class="romCon">
-          <div class="left">
-            <h1>
-              <span style="color: rgb(255, 94, 20)">Global</span><br /><span
-                >Currencies</span
+    <div class="main">
+      <div class="romCon">
+        <h1 class="romH1">Binary Converter</h1>
+        <div class="form">
+          <form>
+            <label for="roman">Convert from</label>
+            <div
+              style="
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+              "
+            >
+              <input
+                type="text"
+                id="From"
+                name="From"
+                placeholder="Enter you value"
+              />
+              <select
+                class="form-select mx-3"
+                style="width: 30%; margin-top: 1vh"
+                id="Base_I"
               >
-            </h1>
-          </div>
-          <div class="right">
-            <img
-              src="https://img.freepik.com/free-vector/people-holding-global-currency-symbol-illustration_53876-35207.jpg?size=626&ext=jpg"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-      <div class="navigate">
-        <h1>Check out our</h1>
-        <div class="buttons">
-          <form method="get" action="/romCon">
-            <button>Roman Numeral<br /><i class="fas fa-info"></i></button>
-          </form>
-          <form method="get" action="/currency">
-            <button>Currencies<br /><i class="fas fa-dollar-sign"></i></button>
+                <option value="2">binary</option>
+                <option value="8">octal</option>
+                <option value="10">decimal</option>
+                <option value="16">hexa decimal</option>
+              </select>
+            </div>
+            <label style="margin-top: 1vw" for="roman">To</label>
+            <div
+              style="
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+              "
+            >
+              <input
+                type="text"
+                id="To"
+                name="To"
+                disabled="true"
+                style="color: white"
+              />
+
+              <select
+                class="form-select mx-3"
+                style="width: 30%; margin-top: 1vh"
+                id="Base_O"
+              >
+                <option value="2">binary</option>
+                <option value="8">octal</option>
+                <option value="10">decimal</option>
+                <option value="16">hexa decimal</option>
+              </select>
+            </div>
+            <div class="button_coantainer">
+              <input
+                class="button"
+                type="button"
+                id="convert"
+                value="Convert"
+                onclick="Convert()"
+              />
+              <input
+                class="button"
+                type="button"
+                id="reset"
+                value="Reset"
+                onclick="reset()"
+              />
+            </div>
           </form>
         </div>
       </div>
@@ -135,5 +165,6 @@
       src="https://kit.fontawesome.com/4e41a9cd59.js"
       crossorigin="anonymous"
     ></script>
+    <script src="JS/binary.js"></script>
   </body>
 </html>

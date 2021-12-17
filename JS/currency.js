@@ -1,4 +1,3 @@
-
 var currency_I = document.getElementById("Currency_I")
 var currency_O = document.getElementById("Currency_O")
 var from_input = document.getElementById("From")
@@ -35,15 +34,11 @@ getId()
 function SelectCurrency() {
     var input_currency = currency_I.value
     var output_currency = currency_O.value
-    console.log(input_currency)
-    console.log(output_currency)
 }
 
 function SelectValue() {
     var input_value = from_input.value
     var output_value = to_input.value
-    console.log(input_value)
-    console.log(output_value)
 }
 
 async function Convert(){
