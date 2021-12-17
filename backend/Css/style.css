@@ -1,0 +1,187 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body
+{
+    height: 150vh;
+    font-family: 'Baloo 2', cursive;
+}
+
+
+.nav
+{
+    background-color: rgb(255, 107, 38);
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    box-shadow: 0px -3px 16px 6px #0000008a;;
+}
+
+.nav-left
+{
+    width: 70%;
+}
+
+
+.nav-list
+{
+    display: flex;
+    list-style: none;
+    justify-content: end;
+}
+
+.nav-itmes
+{
+    margin: 10px 20px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid rgb(255, 107, 38);
+}
+
+
+.leftSide
+{
+    margin: auto;
+}
+
+
+.rightSide
+{
+    margin: auto;
+}
+
+.nav li a
+{
+    padding: 10px;
+    border-radius: 15px;
+    transition: 0.5s;
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    padding: 10px;    
+}
+
+
+ a:hover
+{
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 6px #08080869;
+    background-color: rgb(255, 94, 20);
+}
+
+
+a:active
+{
+    background-color: rgb(255, 94, 20);
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px #02020269;
+    transition: 0.1s;
+}
+
+
+footer
+{
+    position: absolute;
+    bottom: -50vh;
+    background-color: black;
+    color: white;
+    width: 98.9vw;
+    text-align: center;
+}
+
+
+.lft
+{
+    border: 3px solid rgb(217 110 1);
+    border-spacing: 2px;
+    font-size: 40px;
+    text-align: center;
+    background-color: rgb(255, 107, 38);
+}
+
+
+.lft-td
+{
+    border: 2px solid rgb(255, 255, 255);
+    color: white;
+    padding: 5px 23px;
+}
+
+
+.rft-td
+{
+        border: 2px solid rgb(255, 255, 255);
+        color: white;
+        padding: 5px;
+}
+
+
+.rft
+{
+        border: 3px solid rgb(217 110 1);
+        border-spacing: 2px;
+        font-size: 40px;
+        text-align: center;
+        background-color: rgb(255, 107, 38);
+}
+
+#responsiveNav{
+    display: none;
+    background-color: rgb(255, 107, 38);
+}
+
+
+.drop-nav-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+
+
+.drop-nav-list li a{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 15px;
+    transition: 0.5s;
+    font-size: 30px;
+    color: white;
+    padding: 10px;  
+}
+
+
+@media all and (max-width: 1024px){
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+
+    body{
+        height: 150vh;
+        font-family: 'Baloo 2', cursive;
+    }
+
+    #desktopNav{
+        display: none;
+    }
+    #responsiveNav{
+        display: block;
+    }
+
+    .lft{
+        display: none;
+    }
+    
+    .rft{
+        display: none;
+    }
+} 
