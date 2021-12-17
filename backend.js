@@ -9,6 +9,10 @@ var path = require("path")
 app.use(express.static(path.join(__dirname)))
 
 app.get("/", (req, res)=>{
+  res.sendFile(__dirname + '/home.html')
+})
+
+app.get("/romCon", (req, res)=>{
   res.sendFile(__dirname + '/romCon.html')
 })
 

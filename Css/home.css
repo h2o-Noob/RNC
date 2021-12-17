@@ -1,0 +1,59 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.intro{
+    background-color: rgb(221, 221, 221);
+}
+
+.intro_h1{
+    font-size: 25vh;
+    color: (255, 94, 20);
+}
+
+.intro_h2{
+    font-size: 15vh;
+    color: rgb(255, 94, 20);
+}
+
+.services{
+    background-color: white;
+    padding-top: 5vh;
+    margin-top: 5vh;
+}
+
+.romCon{
+    display: flex;
+    justify-content: space-between;
+}
+
+.romCon h1{
+    font-size: 20vh;
+    text-align: center;
+}
+
+.navigate{
+    background-color: rgb(255, 94, 20);
+    color: white;
+}
+
+.navigate h1{
+    font-size: 20vh;
+    text-align: center;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons button{
+    font-size: 5vh;
+    padding: 2px 10px;
+    border-radius: 15px;
+    background-color: black;
+    box-shadow: inset 0px 0px 7px 2px darkgrey;
+    color: rgb(255, 94, 20);
+    margin: 3vh;
+}
