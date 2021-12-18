@@ -61,3 +61,38 @@
     color: rgb(255, 94, 20);
     margin: 3vh;
 }
+
+.more h1{
+    font-size: 20vh;
+    text-align: center;
+}
+
+.more section{
+    font-size: 6vh;
+    text-align: center;
+}
+
+.more_span{
+    font-size: 6vh;
+    text-align: center;
+    color: rgb(255, 94, 20);
+}
+
+.more_span ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    margin-top: 3vh;
+}
+
+.more_span li{
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: rgb(255, 94, 20);
+}
+
+.Contact{
+    background-color: rgb(255, 94, 20);
+    color: white;
+}
