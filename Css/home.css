@@ -3,6 +3,10 @@
     margin: 0px;
 }
 
+body{
+    font-family: 'Baloo 2', cursive;
+}
+
 .intro{
     background-color: rgb(221, 221, 221);
 }
@@ -34,7 +38,7 @@
 }
 
 .romCon_img{
-    width: 55%;
+    width: 75vh;
 }
 
 .navigate{
@@ -60,6 +64,10 @@
     box-shadow: inset 0px 0px 7px 2px darkgrey;
     color: rgb(255, 94, 20);
     margin: 3vh;
+}
+
+.more{
+    font-family: 'Baloo 2', cursive;
 }
 
 .more h1{
@@ -95,4 +103,49 @@
 .Contact{
     background-color: rgb(255, 94, 20);
     color: white;
+    display: flex;
+}
+
+.left{
+    width: 30%;
+}
+
+.right{
+    width: 70%;
+    text-align: center;
+}
+
+.Contact ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 5vh;
+    font-family: 'Baloo 2', cursive;
+}
+
+.Contact li{
+    margin: 2vh;
+}
+
+.Contact a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+.Contact a:hover{
+    text-decoration: none;
+    color: rgb(196, 196, 196);
+    border-radius: 0px;
+    box-shadow: none;
+    padding: 0px;
+}
+
+.Contact h1{
+    font-size: 15vh;
+}
+
+.Contact h2{
+    font-size: 10vh;
 }
