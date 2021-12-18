@@ -25,3 +25,8 @@ function Convert() {
     to_input.value = digit
   }
 }
+
+function Reset() {
+  from_input.value=0
+  to_input.value=0
+}
